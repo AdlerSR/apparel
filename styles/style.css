@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body, input, button{
+  font-family: 'Josefin Sans';
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  height: 100vh;
+}
+
+.container-left{
+  height: 100%;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-size: cover;
+  padding: 200px 200px;
+  align-items: left;
+  justify-content: center;
+}
+
+.content img.logo{
+  width: 200px;
+  position: absolute;
+  top: 50px
+}
+
+.content h1{
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-weight: bold;
+  color: hsl(0, 6%, 24%);
+  margin-bottom: 40px;
+  width: 400px;
+}
+
+.content h1 span{
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+.content p{
+  font-size: 18px;
+  width: 500px;
+  color: hsl(0, 36%, 70%);
+  margin-bottom: 60px;
+}
+
+.content form{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  position: relative;
+  width: 500px;
+}
+
+.content form input{
+  padding: 0px 25px;
+  border-radius: 20px;
+  width: 450px;
+  background-color: transparent;
+  border: solid 1px hsl(0, 0%, 53%);
+  font-size: 15px;
+  height: 100%;
+}
+
+.content form input.error{
+  border: solid 2px hsl(0, 93%, 68%);
+}
+
+.content form input::placeholder{
+  color: hsl(0, 32%, 75%);
+}
+
+.content form button{
+  height: 100%;
+  width: 110px;
+  border-radius: 25px;
+  font-size: 15px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  position: absolute;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 200ms;
+}
+
+.content form button:hover{
+  filter: brightness(0.9);
+}
+
+.content form img.icon-error{
+  position: absolute;
+  right: 160px;
+  display: none;
+}
+
+.content form img.icon-error-block{
+  display: block;
+}
+
+.container-right{
+  background-image: url(../images/hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
